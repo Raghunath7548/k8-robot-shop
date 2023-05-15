@@ -8,6 +8,7 @@ metadata:
 spec:
   containers:
   - name: web
+    imagePullPolicy: Always
     image: rmorampu/web:k8
     ports:
       - containerPort: 80
