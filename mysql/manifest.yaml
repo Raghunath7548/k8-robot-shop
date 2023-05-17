@@ -4,8 +4,9 @@ kind: ConfigMap
 metadata:
   name: mysql-config
 data:
-  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
   MYSQL_DATABASE: "cities"
+  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+  
 ---
 apiVersion: v1
 kind: Secret
@@ -13,8 +14,8 @@ metadata:
   name: mysql-secret
 type: Opaque
 data: 
-  username: c2hpcHBpbmcNCg==
-  password: c2VjcmV0DQo=
+  MYSQL_USER: c2hpcHBpbmcNCg==
+  MYSQL_PASSWORD: c2VjcmV0DQo=
 
 ---
 apiVersion: v1
@@ -32,7 +33,7 @@ spec:
     envFrom:
     - configMapRef:
         name: mysql-config
-    - secretKeyRef:
+    - secretRef:
         name: mysql-secret
     ports:
     - containerPort: 3306
