@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -54,5 +55,5 @@ spec:
     tier: db
   ports:
   - protocol: TCP
-    port: 3306
+    port: 80
     targetPort: 3306
