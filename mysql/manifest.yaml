@@ -5,7 +5,7 @@ metadata:
   name: mysql-config
 data:
   MYSQL_DATABASE: "cities"
-  MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
   
 ---
 apiVersion: v1
