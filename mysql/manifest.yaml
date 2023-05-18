@@ -14,9 +14,9 @@ metadata:
   name: mysql-secret
 type: Opaque
 data: 
-  MYSQL_USER: c2hpcHBpbmc=
-  MYSQL_PASSWORD: c2VjcmV0
-  MYSQL_ROOT_PASSWORD: cm9vdDEyMw==
+  MYSQL_USER: c2hpcHBpbmcNCg==
+  MYSQL_PASSWORD: c2VjcmV0DQo=
+  MYSQL_ROOT_PASSWORD: cm9vdDEyMw0K
 
 ---
 apiVersion: v1
