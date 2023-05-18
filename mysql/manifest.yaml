@@ -16,6 +16,7 @@ type: Opaque
 data: 
   MYSQL_USER: c2hpcHBpbmcNCg==
   MYSQL_PASSWORD: c2VjcmV0DQo=
+  MYSQL_ROOT_PASSWORD: cm9vdDEyMw==
 
 ---
 apiVersion: v1
